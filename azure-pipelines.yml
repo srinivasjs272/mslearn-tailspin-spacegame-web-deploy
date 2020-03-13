@@ -15,11 +15,11 @@ stages:
         demands:
           - npm
 
-    variables:
-      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '3.1.100'
+  variables:
+    wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+    dotnetSdkVersion: '3.1.100'
 
-    steps:
+  steps:
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
   inputs:
